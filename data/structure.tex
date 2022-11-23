@@ -1,0 +1,95 @@
+%Page Setup, don't remove
+\documentclass[12pt]{book} 
+\setlength{\columnsep}{0.7truecm}
+\setlength{\parindent}{0cm}
+\usepackage[top=2truecm,bottom=2.8truecm, left=2.2truecm, right=2.2truecm,headsep=10pt, paperwidth=19.3truecm, paperheight=27.6truecm]{geometry} 
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\definecolor{ocre}{RGB}{52,177,201} 
+\usepackage{pdfpages}
+\usepackage{avant}
+\usepackage{bussproofs}
+\usepackage{mathptmx}
+%\usepackage{ebgaramond}
+% \usepackage{xeCJK}
+% \setCJKmainfont{SimSun}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usepackage{matchsticks}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage[utf8]{vietnam}
+\usepackage{babel}
+\usepackage[LSBC5,T1]{fontenc}
+
+%----------------------------------------------------------------------------------------
+%	VARIOUS REQUIRED PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{titlesec} % Allows customization of titles
+\usepackage{multicol}
+\usepackage{graphicx} % Required for including pictures
+%\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+\usepackage{lipsum} % Inserts dummy text
+\usepackage{tikz} % Required for drawing custom shapes
+%\usepackage{enumitem} % Customize lists
+%\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
+\usepackage{booktabs} % Required for nicer horizontal rules in tables
+\usepackage{eso-pic} % Required for specifying an image background in the title page
+\usepackage{titletoc} % Required for manipulating the table of contents
+\contentsmargin{0cm} % Removes the default margin
+\usepackage{adjustbox} 
+\usepackage{amsmath,amsfonts,amssymb,amsthm} % For math equations, theorems, symbols, etc
+%\usepackage[framemethod=tikz]{mdframed} 
+\usepackage[sexy]{evan}
+\usepackage{hyperref}
+\urlstyle{same}
+\usepackage{tikz} % figure in two column
+\usepackage{float}
+\usepackage{biblatex}
+\usepackage{caption}% dinh dang figure caption
+%\usepackage[font=normalsize]{caption}
+\usepackage{changepage}
+\usepackage{booktabs}
+
+\usepackage{chngcntr}
+\usepackage{array}
+\usepackage{eurosym}
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage{setspace}
+\usepackage{afterpage}
+\usepackage{scalerel}
+\usepackage{blindtext}
+\usepackage{tabularx}
+\usepackage{afterpage}
+\usepackage{array}
+%\usepackage{transparent}
+\usepackage{efbox}
+\usepackage{tabulary}
+% \usepackage{CJKutf8}
+\usepackage{subcaption}
+\usepackage{rotating}
+\usepackage{microtype}
+\usepackage{pgfplots}
+
+\usetikzlibrary{lindenmayersystems}
+\usetikzlibrary{shapes,shapes.geometric}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{calc,intersections}
+\usetikzlibrary[shadings]
+\usetikzlibrary{decorations.fractals}
+
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+backgroundcolor=black!5,
+linecolor=ocre,
+leftline=true,
+innerleftmargin=6pt,
+innerrightmargin=6pt,
+innertopmargin=8pt,
+leftmargin=0cm,
+rightmargin=0cm,
+innerbottommargin=8pt]{tBox}
+
+\def\PIbox#1{\tikz\node[draw = ocre,fill=black!5,align=justify,text width=.95\linewidth,inner sep=2mm]{#1};}%
+\renewcommand{\qedsymbol}{}

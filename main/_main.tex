@@ -1,0 +1,156 @@
+\input{../data/structure}	
+\input{../data/moreOfTuan}
+\graphicspath{{../main/pic/}}
+\everymath{\displaystyle}
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+\usepackage{ebgaramond}
+\usepackage{xpatch}
+\PassOptionsToPackage{hyphens}{url}
+
+\usepackage{url}
+\usepackage{type1cm}
+\usepackage{lettrine}
+\usepackage{makecell}
+\renewcommand{\LettrineTextFont}{\rmfamily}
+\usepackage{skak}
+%\usepackage{xskak}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{cases}
+\usepackage{tikz-cd}
+\usepackage{oplotsymbl}
+\definecolor{codienhiendai}{cmyk}{0.72, 0, 0.42, 0.1}
+\definecolor{thachthuctoanhoc}{cmyk}{0.87, 0.46, 0.69, 0.31}
+\definecolor{diendantoanhoc}{cmyk}{0.75, 0, 0.7, 0}
+\definecolor{timhieukhoahoc}{cmyk}{0.84, 0.7, 0, 0}
+\definecolor{quantoan}{cmyk}{0.8, 0.57, 0, 0}
+\definecolor{cackithi}{cmyk}{0.7, 0.35, 0, 0}
+\definecolor{hoccungpi}{cmyk}{0.67, 0.6, 0, 0}
+\definecolor{gocco}{cmyk}{0.65, 0.78, 0, 0}
+\definecolor{toancuabi}{cmyk}{0, 1, 0, 0}
+\definecolor{doithoaitoanhoc}{cmyk}{0.6, 0.3, 0 ,0.63}
+\definecolor{duongvaotoanhoc}{cmyk}{0, 0.7, 0.9, 0}
+\definecolor{toanhocdoisong}{cmyk}{0 , 0.93, 1, 0}
+\definecolor{tramthienvan}{cmyk}{0, 0.98, 0.95, 0}
+\definecolor{lichsutoanhoc}{cmyk}{0.35, 0.5, 0.8, 0.1}
+\definecolor{doisongtoanhoc}{cmyk}{0.25, 0.3, 0.5, 0.1}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+
+\definecolor{darkblue}{rgb}{0.089,0.21,0.363}
+\usepackage[hang,splitrule]{footmisc}
+\usetikzlibrary{arrows}
+\usetikzlibrary{patterns}
+\usetikzlibrary{decorations.pathreplacing,calligraphy,backgrounds}
+\setlength{\footnotemargin}{0cm}
+\setlength{\footnotesep}{0.35cm}
+\setlength{\skip\footins}{0.35cm}
+\setlength\footskip{33pt}
+
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+
+\def\footnotelayout{\itshape}
+\renewcommand*\footnoterule{}
+\renewcommand\footnoterule{\vspace*{0.25cm}\hrule width 1\textwidth\vspace*{0.25cm}}
+
+\newcommand{\insertpic}[4]{
+	\begingroup
+	\AddToShipoutPicture*{\put(#1,#2){\includegraphics[scale=#3]{#4}}} % %Image background
+	\centering
+	\endgroup
+}
+
+\tikzset{
+	squarednode/.style={rectangle, draw=red!60, fill=red!5, very thick, minimum size=3mm}
+}
+
+\tikzset{
+	sqnode/.style={rectangle, draw=cackithi, very thick, minimum size=3mm}
+}
+
+\tikzset{
+	roundnode/.style={circle, draw=toancuabi, fill=cackithi!50, minimum size=3mm},
+}
+
+
+\begin{document}
+%	 \thispagestyle{empty}
+%	 \begingroup 
+%	 \AddToShipoutPicture*{\put(0,0){\includegraphics[scale=1]{ML.pdf}}}
+%	 \centering
+%	 \vspace*{0cm}
+%	 \endgroup
+%	 \newpage	  
+%	 \pagestyle{empty}
+%
+%	\setcounter{page}{2}
+%%	
+%	\setcounter{figure}{0}
+%	\input{../duongvaotoanhoc/duongvaotoanhoc} 
+%	\newpage
+%
+%	\setcounter{figure}{0}
+%	\input{../quantoan/quantoan}
+%	\newpage
+
+%	\thispagestyle{empty}
+%	\begingroup 
+%	\AddToShipoutPicture*{\put(0,0){\includegraphics[scale=1]{DTS.pdf}}}
+%	\centering
+%	\vspace*{0cm}
+%	\endgroup
+%	\newpage	
+%	\pagestyle{empty}
+	
+	\setcounter{figure}{0}
+	\input{../toancuabi/toancuabi2}
+	\newpage
+	
+%	\setcounter{figure}{0}
+%	\input{../thachthuctoanhoc/thachthuc}
+%	\newpage 
+	
+%	\setcounter{figure}{0}
+%	\input{../hoccungpi/hoccungpi3}
+%	\newpage
+%	
+%	\setcounter{figure}{0}
+%	\input{../cackithi/cackithi}
+%	\newpage
+%	
+%	\setcounter{figure}{0}
+%	\input{../lichsutoanhoc/lichsutoanhoc}
+%	\newpage
+%%
+%	\setcounter{figure}{0}
+%	\input{../timhieukhoahoc/timhieukhoahoc}
+%	\newpage
+%	
+%	\setcounter{figure}{0}
+%	\input{../gocco/gocco}
+%	\newpage
+	
+%	\thispagestyle{empty}
+%	\begingroup 
+%	\AddToShipoutPicture*{\put(0,0){\includegraphics[width=19.3cm]{dovui.pdf}}}
+%	\centering
+%	\vspace*{0cm}
+%	\endgroup
+%	\newpage	
+%	\pagestyle{empty}
+\end{document} 
+%	\setcounter{figure}{0}
+%	\input{../toanhocdoisong/toanhocdoisong}
+%	\newpage
+
+%	\setcounter{figure}{0}
+%	\input{../doisongtoanhoc/doisongtoanhoc}
+%	\newpage
+
+%	\setcounter{figure}{0}
+%	\input{../toanhocdoisong/toanhocdoisong}
+%	\newpage

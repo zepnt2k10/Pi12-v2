@@ -1,0 +1,42 @@
+\ProvidesPackage{matchsticks}
+
+\usetikzlibrary{shapes.geometric,shadows,calc}
+
+\pgfdeclarelayer{back}
+\pgfsetlayers{back,main}
+
+\makeatletter
+\pgfkeys{%
+  /tikz/on layer/.code={
+    \pgfonlayer{#1}\begingroup
+    \aftergroup\endpgfonlayer
+    \aftergroup\endgroup
+  },
+  /tikz/node on layer/.code={
+    \pgfonlayer{#1}\begingroup
+    \expandafter\def\expandafter\tikz@node@finish\expandafter{\expandafter\endgroup\expandafter\endpgfonlayer\tikz@node@finish}%
+  },
+}
+\makeatother
+
+\tikzset{
+  match/.style = {
+    cylinder,
+    shape aspect = 1.5,
+    cylinder uses custom fill,
+    cylinder body fill=yellow,
+    cylinder end fill = red,
+    inner sep = 0pt,
+    minimum width = 2mm,
+    draw = black!20!yellow,
+    sloped, midway,
+    drop shadow = {shadow yshift=-.7mm, shadow xshift=1mm, opacity=.8, on layer=back},
+  }
+}
+\def\match#1#2{
+\path let
+    \p1=(#2),
+    \n1={0.8*veclen(\p1)}
+    in (#1) -- +(#2)
+    node[match,minimum height=\n1] {\phantom{x}};
+}
