@@ -86,15 +86,15 @@
 			\draw[color=qqqqff] (0,3.75) node {$A$};
 			\draw [fill=qqqqffa] (1.473281922635266,-3.4031430263808087) circle (1.6pt);
 			\draw[color=qqqqff] (1.65,-3.75) node {$M$};
-			\draw [fill=qqqqffa] (0,-0.2679491924311226) circle (1.6pt);
-			\draw[color=qqqqff] (-0.4,-0.13) node {$O$};
+%			\draw [fill=qqqqffa] (0,-0.2679491924311226) circle (1.6pt);
+%			\draw[color=qqqqff] (-0.4,-0.13) node {$O$};
 		\end{tikzpicture}
 		\vspace*{-10pt}
 	\end{figure}
 	\hfill	\textit{Hoàng Ngọc Minh, Hà Nội}
 	\vskip 0.1cm
 	{\color{thachthuctoanhoc}{\usefont{T5}{qag}{b}{n} P666.}}
-	(Mức $B$) Cho số nguyên $n\ge 13$. Chia hình vuông cạnh n thành năm hình chữ nhật, như ở hình dưới đây. Hỏi, độ dài các cạnh của năm hình chữ nhật đó có thể là $1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$, $9$, $10$ hay không? Vì sao?
+	(Mức $B$) Cho số nguyên $n\ge 13$. Chia hình vuông cạnh $n$ thành năm hình chữ nhật, như ở hình dưới đây. Hỏi, độ dài các cạnh của năm hình chữ nhật đó có thể là $1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$, $9$, $10$ hay không? Vì sao?
 	\begin{figure}[H]
 		\vspace*{-10pt}
 		\centering
@@ -316,9 +316,9 @@
 	\vskip 0.05cm
 	$\pmb{1.}$ Trong số các lời giải Tạp chí đã nhận được từ bạn đọc, rất tiếc, có một số lời giải không được chấp nhận là lời giải đúng, do người giải bài đã mắc một trong các lỗi sau:
 	\vskip 0.05cm
-	-- \textit{Ngộ nhận} rằng, nếu $a, b, c > 0$ và $abc = 1$, thì
+	-- \textit{Ngộ nhận} rằng, nếu $a, b > 0$ thì
 	\begin{align*}
-		\frac{1}{{{{\left( {1 \!+\! a} \right)}^2}}} \!+\! \frac{1}{{{{\left( {1 \!+\! b} \right)}^2}}} \!+\! \frac{1}{{1 \!+\! c}} \!=\! 1 \!\Leftrightarrow\! a \!=\!b \!=\!c.
+		\frac{1}{{{{\left( {1 \!+\! a} \right)}^2}}} \!+\! \frac{1}{{{{\left( {1 \!+\! b} \right)}^2}}} \!\ge\! \frac{1}{{1 \!+\! ab}} \!\Leftrightarrow\! a \!=\!b.
 	\end{align*}
 	-- Mới chỉ chứng minh được rằng, nếu $x, y, z > 0$ thì
 	\begin{align*}
@@ -388,7 +388,7 @@
 	\vskip 0.05cm
 	Xét một cách điền bất kỳ của Pi, thỏa mãn các điều kiện $i)$ và $ii)$.
 	\vskip 0.05cm
-	Gọi $S$ là tổng của tám số ở tám hình tròn nhỏ, nằm trên đường tròn lớn. Theo $i)$, 
+	Gọi $S$ là tổng của tám số ở tám hình tròn nhỏ, nằm trên đường tròn lớn. Theo $i)$, ta có:
 	\begin{align*}
 		S = 66. \tag{$1$} 
 	\end{align*}
@@ -642,7 +642,7 @@
 	\begin{align*}
 		\lim \left( {\frac{1}{{x_{n + 1}^3}} - \frac{1}{{x_n^3}}} \right) = \frac{3}{2}.
 	\end{align*}
-	Do đó, theo định lý Stolz--Cesàro, ta có $\lim \frac{1}{{nx_n^3}} = \frac{3}{2}$; suy ra,   $\lim nx_n^3 = \frac{2}{3}$. \hfill                                   ($2$)
+	Do đó, theo định lý trung bình Cesaro, ta có $\lim \frac{1}{{nx_n^3}} = \dfrac{3}{2}$; suy ra,   $\lim nx_n^3 = \dfrac{2}{3}$. \hfill                                   ($2$)
 	\vskip 0.05cm
 	Tiếp theo, từ hệ thức xác định dãy $(x_n)$  ta có:
 	\begin{align*}
@@ -655,7 +655,7 @@
 	\begin{align*}
 		\lim \left( {\left( {\frac{1}{{{x_{n + 1}}}} - \frac{1}{{{x_n}}}} \right)\sqrt[3]{{{n^2}}}} \right) = \frac{1}{2} \cdot {\left( {\frac{2}{3}} \right)^{\frac{2}{3}}}.
 	\end{align*}
-	Mà  $\frac{1}{3} < \frac{1}{2} \cdot {\left( {\frac{2}{3}} \right)^{\frac{2}{3}}}$, nên theo định nghĩa giới hạn hữu hạn, tồn tại số nguyên dương  $n_0$, sao cho với mọi $n \ge n_0$  ta có
+	Mà  $\dfrac{1}{3} < \dfrac{1}{2} \cdot {\left( {\frac{2}{3}} \right)^{\frac{2}{3}}}$, nên theo định nghĩa giới hạn hữu hạn, tồn tại số nguyên dương  $n_0$, sao cho với mọi $n \ge n_0$  ta có
 	\begin{align*}
 		\left( {\frac{1}{{{x_{n + 1}}}} - \frac{1}{{{x_n}}}} \right)\sqrt[3]{{{n^2}}} > \frac{1}{3}.
 	\end{align*}
@@ -667,7 +667,7 @@
 	\vskip 0.05cm
 	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
 	\vskip 0.05cm
-	$\pmb{1.}$ Bài đã ra là một bài tập khá cơ bản, thuộc chủ đề ``Ứng dụng của định lý trung bình Stolz--Cesàro trong việc nghiên cứu tiệm cận của các dãy số, được cho bởi hệ thức truy hồi dạng ${x_{n + 1}} = {x_n} + a \cdot x_n^\alpha .$". Việc có thêm số hạng $-\dfrac{1}{2}x_n^5$ trong hệ thức truy hồi của dãy $(x_n)$  ở đề bài chỉ gây thêm chút rắc rối về kỹ thuật. Trong lời giải trên, rắc rối này đã được xử lý bằng phép đặt  ${y_n} = \frac{{x_n^3 + x_n^4}}{2}$.
+	$\pmb{1.}$ Bài đã ra là một bài tập khá cơ bản, thuộc chủ đề ``Ứng dụng của định lý trung bình Cesaro trong việc nghiên cứu tiệm cận của các dãy số, được cho bởi hệ thức truy hồi dạng ${x_{n + 1}} = {x_n} + a \cdot x_n^\alpha .$". Việc có thêm số hạng $-\dfrac{1}{2}x_n^5$ trong hệ thức truy hồi của dãy $(x_n)$  ở đề bài chỉ gây thêm chút rắc rối về kỹ thuật. Trong lời giải trên, rắc rối này đã được xử lý bằng phép đặt  ${y_n} = \frac{{x_n^3 + x_n^4}}{2}$.
 	\vskip 0.05cm
 	$\pmb{2.}$ Với việc hiểu định nghĩa giới hạn hữu hạn của một dãy số, ở mức tối thiểu cần thiết, dễ thấy, điều phải chứng minh theo yêu cầu của bài toán có thể rút ra được từ việc khảo sát tính hội tụ của dãy $(u_n)$  xác định bởi
 	\begin{align*}
@@ -708,8 +708,8 @@
 	\end{align*}
 	Vì thế, theo ($3$), ta có:
 	\begin{align*}
-		{3^{{4^{2003}}}} &= {\left( {{3^{20}}} \right)^m} \cdot {3^4} \equiv 1 \cdot 6 \\
-		&= 6\left( {\bmod 25} \right). \tag{$4$}
+			{3^{{3^{2002}}}} &= {\left( {{3^{20}}} \right)^k} \cdot {3^9} \equiv 1 \cdot 2^3 \\
+		&= 8\left({\bmod 25} \right). \tag{$4$}
 	\end{align*}
 	Do
 	\begin{align*}
@@ -722,8 +722,8 @@
 	\end{align*}
 	Vì thế, theo ($3$), ta có:
 	\begin{align*}
-		{3^{{3^{2002}}}} &= {\left( {{3^{20}}} \right)^k} \cdot {3^9} \equiv 1 \cdot 2^3 \\
-		&= 8\left({\bmod 25} \right). \tag{$5$}
+		{3^{{4^{2003}}}} &= {\left( {{3^{20}}} \right)^m} \cdot {3^4} \equiv 1 \cdot 6 \\
+		&= 6\left( {\bmod 25} \right). \tag{$5$}
 	\end{align*}
 	Từ ($2$), ($4$), ($5$) suy ra
 	\begin{align*}
@@ -733,6 +733,7 @@
 	\vskip 0.05cm
 	Vì vậy, hai chữ số tận cùng của số $T$ là $48$.
 	\vskip 0.05cm
+	\columnbreak
 	\textbf{\color{thachthuctoanhoc}Bình luận và Nhận xét}
 	\vskip 0.05cm
 	$\pmb{1.}$ Có thể phát hiện ra ($3$) (trong Lời giải trên) nhờ Định lý Euler. Định lý được phát biểu như sau:
@@ -935,7 +936,7 @@
 	\end{align*}
 	mà tổng tất cả các số thuộc tập con đó bằng  $m$.
 	\vskip 0.05cm
-	Ký hiệu ${S_2} \backslash {S_1}$.  Ta có:
+	Ký hiệu ${S_2} = S \backslash {S_1}$.  Ta có:
 	\vskip 0.05cm
 	\textbf{\color{thachthuctoanhoc}Nhận xét} $\pmb{2.}$ Mỗi tập con $X$ của $S$ đều biểu diễn được một cách duy nhất dưới dạng:
 	\begin{align*}
@@ -953,7 +954,7 @@
 	\begin{align*}
 		T = {T_1} \cup {T_2},
 	\end{align*}
-	trong đó, $T_2$ là một tập con \textit{khác rỗng} của $S_2$, và $T_1$ là một tập con của  $S_1$, mà tổng các số thuộc tập con đó bằng  $2^k -r$ với $r$ là số dư trong phép chia tổng các số thuộc $T_2$  cho  $2^k$.
+	trong đó, $T_2$ là một tập con \textit{khác rỗng} của $S_2$, và $T_1$ là một tập con của  $S_1$, mà tổng các số thuộc tập con đó bằng  $2^k -r$, với $r$ là số dư trong phép chia tổng các số thuộc $T_2$  cho  $2^k$.
 	\vskip 0.05cm
 	Với quy ước $2/$, nếu $r$ là số dư trong phép chia cho $2^k$  thì $2^k -r$ là một số tự nhiên không vượt quá  $2^k -1$. Do đó, từ Nhận xét $1$ suy ra, số tập con khác rỗng của $S$ có dạng nêu ở Nhận xét $3$ chính bằng số tập con khác rỗng của $S_2$. Do đó, theo Nhận xét $3$, số tập con khác rỗng, có tính chất đề bài yêu cầu, của $S$ bằng số tập con khác rỗng của  $S_2$.
 	\vskip 0.05cm
