@@ -11,17 +11,17 @@
 \vspace*{185pt}
 
 \begin{multicols}{2}
-	Bài toán hai cái can là một loại bài toán rất quen thuộc ở bậc tiểu học. Trong đó, ta cần tìm cách để sử dụng hai cái can với dung tích $a$ và $b$ lít để đong được $k$ lít nước từ bể. Trong bài viết này, chúng ta hãy tìm hiểu mối liên hệ giữa bài toán trên và lý thuyết số.
+	Bài toán hai cái can là một loại bài toán rất quen thuộc ở bậc tiểu học. Trong đó, ta cần tìm cách để sử dụng hai cái can với dung tích $a$ và $b$ lít để đong được $k$ lít nước từ bể. Ở đây, ta xét dung tích $a, b$ và số lít cần đong $k$ đều là các số nguyên dương. Trong bài viết này, chúng ta hãy tìm hiểu mối liên hệ giữa bài toán trên và lý thuyết số.
 	\vskip 0.1cm
 	$\pmb{1.}$ \textbf{\color{hoccungpi}Bổ đề Bézout và vấn đề tồn tại nghiệm}
 	\vskip 0.1cm
 	Trong lời giải của bài toán hai cái can nêu trên, ta có những loại thao tác sau:
 	\vskip 0.1cm
-	$\bullet$ Loại $1$: Đổ đầy một can rỗng hoặc đổ hết nước trong một can đầy trở lại bể
+	$\bullet$ Loại $1$: Đổ đầy một can rỗng hoặc đổ hết nước trong một can đầy trở lại bể;
 	\vskip 0.1cm
-	$\bullet$ Loại $2$: Đổ từ một can đầy sang can rỗng
+	$\bullet$ Loại $2$: Đổ từ một can đầy sang can rỗng;
 	\vskip 0.1cm
-	$\bullet$ Loại $3$: Đổ toàn bộ nước trong một can (không đầy) sang can rỗng còn lại
+	$\bullet$ Loại $3$: Đổ toàn bộ nước trong một can (không đầy) sang can rỗng còn lại;
 	\vskip 0.1cm
 	$\bullet$ Loại $4$: Đổ từ một can đầy sang một can đã có một lượng nước nhất định. 
 	\vskip 0.1cm
@@ -36,17 +36,17 @@
 		\centering
 		\vspace*{-5pt}
 		\captionsetup{labelformat= empty, justification=centering}
-		\includegraphics[width=0.75\linewidth]{1}
+		\includegraphics[width=0.65\linewidth]{1}
 		\caption{\small\textit{\color{hoccungpi}Étienne Bézout $(1730 - 1783)$.}}
 		\vspace*{-10pt}
 	\end{figure}
 	Bổ đề Bézout (đặt tên theo nhà toán học Pháp, Étienne Bézout ) được phát biểu như sau:
 	\vskip 0.1cm
-	\textit{Ước chung lớn nhất $d$ của hai số dương $a$ và $b$ luôn có thể được viết dưới dạng $d=s\cdot a+t\cdot b$ với $s,t$ là các số nguyên. Đồng thời, bất kỳ số nguyên nào có dạng $m\cdot a+n\cdot b$ đều là một bội số của $d$.}
+	\textit{Ước chung lớn nhất $d$ của hai số nguyên dương $a$ và $b$ luôn có thể được viết dưới dạng $d=s\cdot a+t\cdot b$ với $s,t$ là các số nguyên. Đồng thời, bất kỳ số nguyên nào có dạng $m\cdot a+n\cdot b$ đều là một bội số của $d$.}
 	\vskip 0.1cm
-	Bổ đề này cho phép ta nhận xét như sau về bài toán hai can nước: với $k$ là số lít nước cần đong, bài toán hai can nước có cách giải khi và chỉ khi $k$ là một bội số của ước chung lớn nhất của $a$ và $b$. Chẳng hạn, với hai can $8$ lít và $12$ lít, do ước chung lớn nhất là $4$ nên ta chỉ có lời giải cho các giá trị cần đong là bội của $4$.
+	Bổ đề này cho phép ta nhận xét như sau về bài toán hai can nước: với $k$ là số lít nước cần đong, bài toán hai can nước có lời giải khi và chỉ khi $k$ là một bội số của ước chung lớn nhất của $a$ và $b$. Chẳng hạn, với hai can $8$ lít và $12$ lít, do ước chung lớn nhất là $4$ nên ta chỉ có lời giải cho các giá trị cần đong là bội của $4$.
 	\vskip 0.1cm 
-	Phần sau của bổ đề Bézout có thể được chứng minh một cách dễ dàng từ phần trước. Vì $d$ là ước chung lớn nhất của $a$ và $b$ nên $a=a_0\cdot d$, $b=b_0\cdot d$. Do đó ta luôn có $m\cdot a+n\cdot b=(ma_0+nb_0)\cdot d$.
+	Phần sau của bổ đề Bézout có thể được chứng minh một cách dễ dàng từ phần trước. Vì $d$ là ước chung lớn nhất của $a$ và $b$ nên $a=a_0\cdot d$, $b=b_0\cdot d$ với $a_0, b_0$ là các số nguyên là một bội của $d$. Do đó ta luôn có $m\cdot a+n\cdot b=(ma_0+nb_0)\cdot d$.
 	\vskip 0.1cm
 	Phần trước của bổ đề có một số cách chứng minh khác nhau. Chúng ta hãy cùng tìm hiểu cách chứng minh xuất phát từ thuật toán Euclid. 
 	\vskip 0.1cm
@@ -54,7 +54,7 @@
 	\vskip 0.1cm
 	Thuật toán Euclid cho phép chúng ta tìm ước chung lớn nhất của hai số một cách nhanh chóng mà không cần phải tiến hành phân tích ra thừa số nguyên tố. Ban đầu, nó được Euclid phát biểu cho các độ dài đoạn thẳng. Sau đây, chúng ta sẽ mô tả thuật toán này theo ngôn ngữ toán học hiện đại.
 	\vskip 0.1cm
-	Thuật toán Euclid được xây dựng dựa trên các nhận định sau cho hai số dương $a$ và $b$:
+	Thuật toán Euclid được xây dựng dựa trên các nhận định sau cho hai số nguyên dương $a$ và $b$:
 	\vskip 0.1cm
 	$\bullet$ $\text{ƯCLN}(a,b) = \text{ƯCLN}(b,a)$					\hfill ($1$)
 	\vskip 0.1cm
@@ -64,17 +64,22 @@
 	\vskip 0.1cm
 	Hai nhận định đầu tiên ($1$) và ($2$) có thể dễ dàng được chứng minh. Để chứng minh nhận định ($3$), ta sử dụng một số tính chất của phép chia hết. 
 	\vskip 0.1cm
-	Vì $c$ là số dư trong phép chia cho $b$ nên $a=c+b\cdot y$ với $y$ là một số dương. Gọi $t$ là một ước chung của $b$ và $c$. Do $b\,\vdots\, t$ nên $b\cdot y\, \vdots\,t$. Đồng thời, $c\,\vdots\,t$ nên $a=c+b\cdot y\,\vdots\,t$. Nói cách khác, mọi ước chung của $b$ và $c$ cũng đều là ước chung của $a$ và $b$. 
+	Vì $c$ là số dư trong phép chia cho $b$ nên $a=c+b\cdot y$ với $y$ là một số không âm và $0 \le c < b$. Gọi $t$ là một ước chung của $b$ và $c$. Do $b\,\vdots\, t$ nên $b\cdot y\,\, \vdots\,\,t$. Đồng thời, $c\,\,\vdots\,\,t$ nên $a=c+b\cdot y\,\,\vdots\,\,t$. Nói cách khác, mọi ước chung của $b$ và $c$ cũng đều là ước chung của $a$ và $b$. 
 	\vskip 0.1cm
 	Tương tự, khi viết $c=a-b\cdot y$, ta cũng có thể chứng minh mọi ước chung của $a$ và $b$ cũng là ước chung của $b$ và $c$. 
 	\vskip 0.1cm
-	Do đó, hai tập hợp ước chung này là như nhau nên phần tử lớn nhất của chúng cũng như nhau hay hai cặp số sẽ có chung ước chung lớn nhất.
+	Do đó, hai tập hợp ước chung này là như nhau nên phần tử lớn nhất của chúng cũng như nhau hay hai cặp số sẽ có cùng ước chung lớn nhất.
 	\vskip 0.1cm
-	Với những nhận định trên, ta có thể tìm ước chung lớn nhất của hai số bằng cách lập một dãy số. Giả sử $a>b$. Đặt $r_0=a,r_1=b$. Sử dụng quy tắc từ ($3$):
+	Với những nhận định trên, ta có thể tìm ước chung lớn nhất của hai số bằng cách lập một dãy số. Giả sử $a>b$. Đặt $r_0=a,r_1=b$. Thực hiện liên tiếp phép chia $r_{i-1}$ cho ra thương là $q_1$ và số dư $r_{i+1}$
+	\setlength{\abovedisplayskip}{5pt}
+	\setlength{\belowdisplayskip}{5pt}
 	\begin{align*}
-		r_{n+1}=r_{n-1}  \mod r_n
+		r_0 &= q_1r_1 + r_2\\
+		r_1 &= q_2r_2 + r-3\\
+		&\ldots\\
+		r_{n+1} &= q_nr_n + r_{n+1}
 	\end{align*}
-	(ở đây $\mod$ là toán tử cho ra số dư của phép chia hai số), ta xây dựng được một dãy số giảm dần: $r_0>r_1>r_2>r_3>\cdots$ và do đó sẽ tồn tại một giá trị $N$ sao cho $r_N=0$ (dãy số không thể nhận giá trị âm). Khi đó, $r_{N-2}\,\vdots\,r_{N-1}$. Từ ($2$) và ($3$), ta có $r_{N-1}$ chính là ước chung lớn nhất của hai số ban đầu.
+	Ta xây dựng được một dãy số nguyên không âm giảm dần: $r_0>r_1>r_2>r_3>\cdots$ và do đó sẽ tồn tại một giá trị $N$ sao cho $r_N=0$. Khi đó, $r_{N-2}\,\vdots\,r_{N-1}$. Từ ($2$) và ($3$), ta có $r_{N-1}$ chính là ước chung lớn nhất của hai số ban đầu.
 	\vskip 0.1cm
 	Ví dụ, với $a=30,b=18$, thuật toán Euclid sinh ra dãy số:
 	\begin{align*}
@@ -86,7 +91,7 @@
 	\end{align*}
 	và trả về giá trị $6$ (phần tử $r_{N-1}$) cho ước chung lớn nhất.
 	\vskip 0.1cm
-	Tiếp theo, ta sẽ giải thích xem thuật toán Euclid liên hệ đến bổ đề Bézout như thế nào. Như đã nói ở trên, dãy luôn không âm và giảm dần nên sẽ luôn có giá trị kết thúc $r_N=0$. Đồng thời, ta có thể viết $r_{n+1}=r_{n-1}-q_n r_n$ với $q_n$ là thương số trong phép chia $r_{n-1}$ cho $r_n$. Có thể thấy, mỗi \,phần \,tử của \,dãy là
+	Tiếp theo, ta sẽ giải thích xem thuật toán Euclid liên hệ đến bổ đề Bézout như thế nào. 
 	\end{multicols}
 	\begin{figure}[H]
 		\centering
@@ -97,9 +102,9 @@
 		\vspace*{-15pt}
 	\end{figure}
 	\begin{multicols}{2}
-	một tổ hợp tuyến tính của hai phần tử đúng trước nó và do đó cũng là tổ hợp tuyến tính của hai phần tử đầu tiên. Điều này dẫn đến việc ước chung lớn nhất $(r_{N-1})$ mà ta tìm được cũng là một tổ hợp tuyến tính của hai số ban đầu. Đến đây, ta cũng đã chứng minh được phần trước của bổ đề Bézout.
+	Như đã nói ở trên, dãy luôn không âm và giảm dần nên sẽ luôn có giá trị kết thúc $r_N=0$. Nhận thấy, ta có thể viết $r_{n+1}=r_{n-1}-q_n r_n$ nên mỗi phần tử của dãy là một tổ hợp tuyến tính của hai phần tử đứng trước nó và do đó cũng là tổ hợp tuyến tính của hai phần tử đầu tiên. Điều này dẫn đến ước chung lớn nhất $(r_{N-1})$ mà ta tìm được cũng là một tổ hợp tuyến tính của hai số ban đầu. Đến đây, ta cũng đã chứng minh được phần trước của bổ đề Bézout.
 	\vskip 0.1cm
-	Ta có thể lập trình một hàm trong Python để tính ước chung lớn nhất sử dụng thuật toán Euclid như trên đây (ý nghĩa của các dòng lệnh được giải thích trong phần comment):
+	Ta có thể lập trình một hàm trong Python để tính ước chung lớn nhất sử dụng thuật toán Euclid như trên đây (ý nghĩa của các dòng lệnh được giải thích trong phần bình luận):
 	\vskip 0.1cm
 	Khi gọi hàm trên, ta sẽ nhận được kết quả là ước chung lớn nhất của hai số.
 	\begin{figure}[H]
@@ -112,12 +117,14 @@
 	\end{figure}
 	$\pmb{3.}$ \textbf{\color{hoccungpi}Thuật toán Euclid mở rộng}
 	\vskip 0.1cm
-	Đến đây thì ta đã giải quyết được vấn đề khi nào bài toán hai can nước có nghiệm. Tuy nhiên, để có thể đưa ra được lời giải cho bài toán, ta cần mở rộng thuật toán Euclid để tính cả các hệ số của tổ hợp tuyến tính biểu diễn ước chung lớn nhất. Với mỗi phần tử $r_n$, ta còn phải tính cả các hệ số $s_n$ và $t_n$ sao cho $r_n=s_n\cdot a+t_n\cdot b$.
+	Đến đây thì ta đã giải quyết được vấn đề khi nào bài toán hai can nước có nghiệm. Tuy nhiên, để có thể đưa ra được lời giải cho bài toán, ta cần mở rộng thuật toán Euclid để tính cả các hệ số của tổ hợp tuyến tính biểu diễn ước chung lớn nhất. Với mỗi phần tử $r_n$, ta cần tìm các hệ số $s_n$ và $t_n$ sao cho $r_n=s_n\cdot a+t_n\cdot b$.
 	\vskip 0.1cm
 	Với hai giá trị đầu của dãy,
+	\setlength{\abovedisplayskip}{5pt}
+	\setlength{\belowdisplayskip}{5pt}
 	\begin{align*}
-		r_0=a=1\cdot a+0\cdot b\\
-		r_1=b=0\cdot a+1\cdot b
+		r_0=a=1\cdot a\!+\!0\cdot b;\,\,
+		r_1=b=0\cdot a\!+\!1\cdot b
 	\end{align*}
 	nên $s_0=1$, $t_0=0$, $s_1=0$, $t_1=1$.
 	\vskip 0.1cm
@@ -129,8 +136,8 @@
 	\end{align*}
 	nên:
 	\begin{align*}
-		s_{n+1}=s_{n-1}-q_n s_n
-		t_{n+1}=t_{n-1}-q_n s_n.
+		s_{n+1}=s_{n-1}-q_n s_n;
+		t_{n+1}=t_{n-1}-q_n t_n.
 	\end{align*}
 	Do ước chung lớn nhất cần tìm là $r_{N-1}$ (khi đã tính ra $r_N=0$), nên ta cũng chỉ cần tính đến $s_{N-1}$ và $t_{N-1}$.
 	\vskip 0.1cm
@@ -140,7 +147,7 @@
 		\centering
 		\captionsetup{labelformat= empty, justification=centering}
 		\setlength{\tabcolsep}{8pt}
-		\renewcommand{\arraystretch}{1.15}
+		\renewcommand{\arraystretch}{1.1}
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
 			$n$	&$r_n$&	$q_n$&	$s_n$&	$t_n$\\
@@ -160,13 +167,13 @@
 	\end{table}		
 	Từ bảng này, ta có ước chung lớn nhất của $48$ và $18$ là $6=-1\cdot 48+3\cdot 18$.
 	\vskip 0.1cm
-	Đồng thời, kết quả này cũng cho phép ta xác định tổ hợp tuyến tính cho bất kỳ một bội số nào của ước chung lớn nhất. Ví dụ:
+	Đồng thời, kết quả này cũng cho phép ta xác định tổ hợp tuyến tính cho bất kỳ một bội số nào đó của ước chung lớn nhất. Ví dụ:
 	\begin{align*}
-		&12=2\cdot 6=-2\cdot 48+6\cdot 18 \\
-		&18=3\cdot 6=-3\cdot 48+9\cdot 18 \\
-		&\vdots\\
-		&72=12\cdot 6=-12\cdot 48+36\cdot 18 \\
-		&\vdots
+		&12=2\cdot 6=-2\cdot 48+6\cdot 18 \\[-0.4ex]
+		&18=3\cdot 6=-3\cdot 48+9\cdot 18 \\[-0.4ex]
+		&\ldots\\[-0.4ex]
+		&72=12\cdot 6=-12\cdot 48+36\cdot 18 \\[-0.4ex]
+		&\ldots
 	\end{align*}
 	Ta có thể bổ sung vào hàm Python tính ước chung lớn nhất theo thuật toán Euclid để được thuật toán Euclid mở rộng như trong hình dưới:
 	\begin{figure}[H]
@@ -240,8 +247,7 @@
 	\vskip 0.1cm
 	Vậy nếu ta muốn đong một lượng lớn hơn thì sao? Giả sử thay vì $1$ lít, ta muốn đong $2$ lít từ các can trên thì ta sử dụng $2=2\cdot 1=4\cdot 8-6\cdot 5$ và làm tương tự.
 	\vskip 0.1cm
-	\textbf{\color{hoccungpi}Bài tập}
-	\vskip 0.1cm
+	\textbf{\color{hoccungpi}Bài tập $\pmb{1.}$}
 	$a)$ Hãy lập bảng như trên cho trường hợp đong $2$ lít từ hai can $8$ lít và $5$ lít.
 	\vskip 0.1cm
 	$b)$ Làm tương tự cho trường hợp muốn đong $4$ lít.
@@ -279,8 +285,7 @@
 	\end{align*}
 	Chú ý rằng phương trình ($4$) có nghiệm là do vế phải là một bội của ước chung lớn nhất của hai số $8$ và $5$, theo bổ đề Bézout. Trong trường hợp phương trình thuần nhất có hai hệ số không nguyên tố cùng nhau, ta cần chia cả hai vế cho ước chung lớn nhất của hai hệ số rồi tiến hành giải tương tự như trên.
 	\vskip 0.1cm
-	\textbf{\color{hoccungpi}Bài tập}
-	\vskip 0.1cm
+	\textbf{\color{hoccungpi}Bài tập $\pmb{2.}$}
 	Hãy giải các phương trình nghiệm nguyên sau:
 	\vskip 0.1cm
 	$a)$ $6x+9y=24$
@@ -325,15 +330,14 @@
 	\vskip 0.1cm
 	Trong khi đó, nếu ta chấp nhận nghiệm âm, số lượt phải đi ít nhất khi một trong hai giá trị $x,y$ âm sẽ ứng với nghiệm $9\cdot 4-2\cdot 1=34$. Tuy ta phải vận chuyển tổng cộng $38$ lít nước trong trường hợp này, số lượt di chuyển chỉ có $5$ lượt, ít hơn nhiều so với hai nghiệm nêu trên.
 	\vskip 0.1cm
-	\textbf{\color{hoccungpi}Bài tập}
-	\vskip 0.1cm
+	\textbf{\color{hoccungpi}Bài tập $\pmb{3.}$}
 	Hãy giải các bài toán sau và tìm phương án với số lần di chuyển hai can ít nhất:
 	\vskip 0.1cm
 	$a)$ Dùng hai can $6$ lít và $11$ lít đong $51$ lít vào bể $2$.
 	\vskip 0.1cm
 	$b)$ Dùng hai can $7$ lít và $10$ lít đong $43$ lít vào bể $2$.
 	\vskip 0.1cm
-	Ta còn có thể mở rộng bài toán ra trường hợp có nhiều can. Để cho đơn giản, ta hãy xét trường hợp sử dụng $3$ can dung tích $a,b,c$ để đong $k$ lít nước từ bể $1$ sang bể $2$, phương trình Diophantine tuyến tính của ta có dạng:
+	Ta còn có thể mở rộng bài toán ra trường hợp có nhiều can. Để cho đơn giản, ta hãy xét trường hợp sử dụng $3$ can dung tích $a,b,c$ để đong $k$ lít nước từ bể $1$ sang bể $2$, phương trình Diophantine tuyến tính lúc này có dạng:
 	\begin{align*}
 		ax+by+cz=k.
 	\end{align*}
@@ -343,19 +347,18 @@
 	\vskip 0.1cm
 	$\bullet$ Biểu diễn $d$ theo $a$ và $b$.
 	\vskip 0.1cm 
-	$\bullet$ Biểu diễn ước chung lớn nhất $g$ của theo $c$ và $d$ theo hai số này. Hãy nhớ rằng ước chung lớn nhất $g$ của $c$ và $d$ cũng là ước chung lớn nhất của ba số $a,b,c$.
+	$\bullet$ Biểu diễn ước chung lớn nhất $g$ của $c$ và $d$ theo hai số này. Hãy nhớ rằng ước chung lớn nhất $g$ của $c$ và $d$ cũng là ước chung lớn nhất của ba số $a,b,c$.
 	\vskip 0.1cm
 	Thế biểu diễn của $d$ theo $a,b$ vào biểu diễn của $g$ theo $c,d$ để cho ra biểu diễn cuối cùng của $g$ theo $a,b,c$.
 	\vskip 0.1cm 
 	Theo cách này, ta luôn có thể tìm được biểu diễn của ước chung lớn nhất của ba số theo một tổ hợp tuyến tính của chúng.
 	\vskip 0.1cm
-	\textbf{\color{hoccungpi}Bài tập}
-	\vskip 0.1cm
+	\textbf{\color{hoccungpi}Bài tập $\pmb{4.}$}
 	$a)$ Chứng minh rằng $\text{ƯCLN}(a,b,c) = \text{ƯCLN}(\text{ƯCLN}(a,b), c)$
 	\vskip 0.1cm
 	$b)$ Dùng nhận định trên để tìm ước chung lớn nhất của $48$, $72$ và $81$.
 	\vskip 0.1cm
-	Điều kiện tồn tại nghiệm vẫn là $k$ phải chia hết hết cho ước chung của cả ba số $a,b,c$. Cách chứng minh tương tự như trường hợp bổ đề Bézout cho hai số.
+	Điều kiện tồn tại nghiệm vẫn là $k$ phải chia hết cho ước chung của cả ba số $a,b,c$. Cách chứng minh tương tự như trường hợp bổ đề Bézout cho hai số.
 	\vskip 0.1cm
 	Để giải phương trình Diophantine cho $3$ số, ta cần tiến hành theo hai bước, mỗi bước giải một phương trình Diophantine cho $2$ số. Cách làm được minh họa cho ví dụ sau:
 	\begin{align*}
@@ -400,8 +403,7 @@
 	\vskip 0.1cm
 	Cho trường hợp $n>3$ cái can, các chứng minh lý thuyết cùng việc giải phương trình cũng tương tự trường hợp $3$ cái can. Chú ý rằng khi giải phương trình Diophantine tuyến tính cho $n$ ẩn số, ta cần thế từng bước, hai ẩn số một lần.
 	\vskip 0.1cm
-	\textbf{\color{hoccungpi}Bài tập}
-	\vskip 0.1cm
+	\textbf{\color{hoccungpi}Bài tập $\pmb{5.}$}
 	Hãy giải phương trình nghiệm nguyên sau:
 	\begin{align*}
 		5x+9y+12z=136.
