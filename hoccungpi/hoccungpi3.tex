@@ -64,7 +64,7 @@
 	\vskip 0.1cm
 	Hai nhận định đầu tiên ($1$) và ($2$) có thể dễ dàng được chứng minh. Để chứng minh nhận định ($3$), ta sử dụng một số tính chất của phép chia hết. 
 	\vskip 0.1cm
-	Vì $c$ là số dư trong phép chia cho $b$ nên $a=c+b\cdot y$ với $y$ là một số không âm và $0 \le c < b$. Gọi $t$ là một ước chung của $b$ và $c$. Do $b\,\vdots\, t$ nên $b\cdot y\,\, \vdots\,\,t$. Đồng thời, $c\,\,\vdots\,\,t$ nên $a=c+b\cdot y\,\,\vdots\,\,t$. Nói cách khác, mọi ước chung của $b$ và $c$ cũng đều là ước chung của $a$ và $b$. 
+	Vì $c$ là số dư trong phép chia cho $b$ nên $a=c+b\cdot y$ với $y$ là một số tự nhiên và $0 \le c < b$. Gọi $t$ là một ước chung của $b$ và $c$. Do $b\,\vdots\, t$ nên $b\cdot y\,\, \vdots\,\,t$. Đồng thời, $c\,\,\vdots\,\,t$ nên $a=c+b\cdot y\,\,\vdots\,\,t$. Nói cách khác, mọi ước chung của $b$ và $c$ cũng đều là ước chung của $a$ và $b$. 
 	\vskip 0.1cm
 	Tương tự, khi viết $c=a-b\cdot y$, ta cũng có thể chứng minh mọi ước chung của $a$ và $b$ cũng là ước chung của $b$ và $c$. 
 	\vskip 0.1cm
@@ -75,7 +75,7 @@
 	\setlength{\belowdisplayskip}{5pt}
 	\begin{align*}
 		r_0 &= q_1r_1 + r_2\\
-		r_1 &= q_2r_2 + r-3\\
+		r_1 &= q_2r_2 + r_3\\
 		&\ldots\\
 		r_{n+1} &= q_nr_n + r_{n+1}
 	\end{align*}
@@ -95,14 +95,14 @@
 	\end{multicols}
 	\begin{figure}[H]
 		\centering
-		\vspace*{5pt}
+%		\vspace*{5pt}
 		\captionsetup{labelformat= empty, justification=centering}
 		\includegraphics[width=1\linewidth]{2}
 		%		\caption{\small\textit{\color{}.}}
 		\vspace*{-15pt}
 	\end{figure}
 	\begin{multicols}{2}
-	Như đã nói ở trên, dãy luôn không âm và giảm dần nên sẽ luôn có giá trị kết thúc $r_N=0$. Nhận thấy, ta có thể viết $r_{n+1}=r_{n-1}-q_n r_n$ nên mỗi phần tử của dãy là một tổ hợp tuyến tính của hai phần tử đứng trước nó và do đó cũng là tổ hợp tuyến tính của hai phần tử đầu tiên. Điều này dẫn đến ước chung lớn nhất $(r_{N-1})$ mà ta tìm được cũng là một tổ hợp tuyến tính của hai số ban đầu. Đến đây, ta cũng đã chứng minh được phần trước của bổ đề Bézout.
+	Như đã nói ở trên, dãy luôn không âm và giảm dần nên sẽ luôn có giá trị kết thúc $r_N=0$. Nhận thấy, ta có thể viết $r_{n+1}=r_{n-1}-q_n r_n$ nên mỗi phần tử của dãy là một tổ hợp tuyến tính của hai phần tử đứng trước nó và do đó cũng là tổ hợp tuyến tính của hai phần tử đầu tiên (tổ hợp tuyến tính của hai số $x, y$ là một biểu thức có dạng $ax+by$). Điều này dẫn đến ước chung lớn nhất $(r_{N-1})$ mà ta tìm được cũng là một tổ hợp tuyến tính của hai số ban đầu. Đến đây, ta cũng đã chứng minh được phần trước của bổ đề Bézout.
 	\vskip 0.1cm
 	Ta có thể lập trình một hàm trong Python để tính ước chung lớn nhất sử dụng thuật toán Euclid như trên đây (ý nghĩa của các dòng lệnh được giải thích trong phần bình luận):
 	\vskip 0.1cm
@@ -264,9 +264,9 @@
 	\begin{align*}
 		ax+by=c.
 	\end{align*}
-	Trong các phương trình dạng này, người ta quan tâm đến các nghiệm x,y là số nguyên. Một nghiệm của phương trình đã được cung cấp bằng cách lấy bội của kết quả từ thuật toán Euclid cho hai số $8$ và $5$ như ở trên:
+	Trong các phương trình dạng này, người ta quan tâm đến các nghiệm $x,y$ là số nguyên. Một nghiệm của phương trình đã được cho bởi cách lấy bội của kết quả từ thuật toán Euclid cho hai số $8$ và $5$ như ở trên:
 	\begin{align*}
-		8\cdot 6+5\cdot (-9)=3
+		8\cdot 6+5\cdot (-9)=3.
 	\end{align*}
 	Các phương trình Diophantine được đặt tên theo nhà toán học Hy Lạp, Diophantus. Ông sống ở Alexandria vào khoảng thế kỷ thứ $3$ sau Công nguyên. Các phương trình mà ông nghiên cứu chỉ cho phép các nghiệm là số nguyên. Ngày nay, chúng vẫn là đề tài của nhiều nghiên cứu toán học hiện đại.
 	\vskip 0.1cm
@@ -274,11 +274,11 @@
 	\begin{align*}
 		8\cdot (6+u)+5\cdot (-9+v)&=3\\
 		(8u+5v)+(8\cdot 6-5\cdot 9)&=3\\
-		8u+5v&=0		\tag{$5$}
+		8u+5v&=0.		\tag{$5$}
 	\end{align*}
 	Phương trình ($5$) là phương trình Diophantine thuần nhất (vế phải bằng $0$) tương ứng với phương trình ($4$). Viết lại ($5$) dưới dạng $8u=-5v$, ta thấy vì $8$ và $5$ là hai số nguyên tố cùng nhau nên $u$ phải chia hết cho $5$. Đặt $u=5p$, ta được $v=-8p$ với $p$ là số nguyên. Do $p$ có thể nhận vô số giá trị, phương trình thuần nhất của ta có vô số nghiệm. 
 	\vskip 0.1cm
-	Phương trình ($4$) cũng sẽ có vô số nghiệm xác định bởi: 
+	Phương trình ($4$) cũng có vô số nghiệm xác định bởi: 
 	\begin{align*}
 		x&=6+5p\\
 		y&=-9-8p.
@@ -288,11 +288,11 @@
 	\textbf{\color{hoccungpi}Bài tập $\pmb{2.}$}
 	Hãy giải các phương trình nghiệm nguyên sau:
 	\vskip 0.1cm
-	$a)$ $6x+9y=24$
+	$a)$ $6x+9y=24$.
 	\vskip 0.1cm
-	$b)$ $4x+12y=44$
+	$b)$ $4x+12y=44$.
 	\vskip 0.1cm
-	Từ họ nghiệm cho phương trình ($4$), ta hãy nhìn lại trường hợp đong $3$ lít từ hai can $8$ lít và $5$ lít. Ta sẽ có vô số nghiệm để chọn bằng cách thay đổi $p$. Giả sử ta muốn số lần đổ đầy can $8$ lít là ít nhất. Khi đó $p=-1$, ta được nghiệm $x=1$; $y=-1$ hay $8-5=3$ ứng với việc đổ đầy can $8$ lít rồi rót trực tiếp từ can $8$ lít sang can $5$ lít. Trong trường hợp muốn chọn can $5$ lít làm can đầu vào và can $8$ lít làm can đầu ra, ta cần cho y nhận giá trị dương. Giá trị dương nhỏ nhất của $y$ ứng với $p=-2$ hay $x=-4$; $y=7$. Độc giả có thể thử lập bảng các thao tác cho trường hợp này.
+	Từ họ nghiệm cho phương trình ($4$), ta hãy nhìn lại trường hợp đong $3$ lít từ hai can $8$ lít và $5$ lít. Ta sẽ có vô số nghiệm để chọn bằng cách thay đổi $p$. Giả sử ta muốn số lần đổ đầy can $8$ lít là ít nhất. Khi đó $p=-1$, ta được nghiệm $x=1$; $y=-1$ hay $8-5=3$ ứng với việc đổ đầy can $8$ lít rồi rót trực tiếp từ can $8$ lít sang can $5$ lít. Trong trường hợp muốn chọn can $5$ lít làm can đầu vào và can $8$ lít làm can đầu ra, ta cần cho $y$ nhận giá trị dương. Giá trị dương nhỏ nhất của $y$ ứng với $p=-2$ hay $x=-4$; $y=7$. Độc giả có thể thử lập bảng các thao tác cho trường hợp này.
 	\vskip 0.1cm
 	Đến đây, ta đã có thể liệt kê tất cả các lời giải của bài toán hai cái can bằng cách sử dụng thuật toán Euclid mở rộng và giải phương trình Diophantine. Tiếp theo, chúng ta sẽ tìm hiểu một số biến thể của bài toán hai cái can.
 	\vskip 0.1cm
@@ -364,11 +364,15 @@
 	\begin{align*}
 		8x+6y+7z=20. \tag{$6$}
 	\end{align*}
-	Trước hết, vì ước chung lớn nhất của $8$ và $6$ là $2$ nên $8x+6y$ sẽ luôn chia hết cho $2$ theo bổ đề Bézout. Do đó, ta đặt $8x+6y=2u$. Thế vào ($6$), ta được:
+	Trước hết, vì ước chung lớn nhất của $8$ và $6$ là $2$ nên $8x+6y$ luôn chia hết cho $2$ theo bổ đề Bézout. Do đó, ta đặt $8x+6y=2u$. Thế vào ($6$), ta được:
 	\begin{align*}
 		2u+7z=20.
 	\end{align*}
-	Thuật toán Euclid mở rộng cho ta $1=2\cdot (-3)+7\cdot 1$. Do đó $20=2\cdot (-60)+7\cdot 20$. Kết hợp với phương trình thuần nhất ta được:
+	Thuật toán Euclid mở rộng cho ta
+	\begin{align*}
+		1=2\cdot (-3)+7\cdot 1.
+	\end{align*}
+	Do đó $20=2\cdot (-60)+7\cdot 20$. Kết hợp với phương trình thuần nhất ta được:
 	\begin{align*}
 		&u=-60+7p\\
 		&z=20-2p
@@ -386,22 +390,22 @@
 	\end{align*}
 	Kết hợp với phương trình thuần nhất, ta được:
 	\begin{align*}
-		x&=-60+7p+6q\\
-		y&=60-7p-8q
+		x&=-60+7p+6q,\\
+		y&=60-7p-8q.
 	\end{align*}
 	với $q$ là số nguyên.
 	\vskip 0.1cm
 	Nghiệm cuối cùng của bài toán có dạng:
 	\begin{align*}
-		x&=-60+7p+6q\\
-		y&=60-7p-8q\\
-		z&=20-2p
+		x&=-60+7p+6q,\\
+		y&=60-7p-8q,\\
+		z&=20-2p,
 	\end{align*}
 	với $p,q \in \mathbb{Z}$.
 	\vskip 0.1cm
 	Đến đây ta đã hoàn toàn có thể giải được bài toán cho trường hợp $3$ cái can.
 	\vskip 0.1cm
-	Cho trường hợp $n>3$ cái can, các chứng minh lý thuyết cùng việc giải phương trình cũng tương tự trường hợp $3$ cái can. Chú ý rằng khi giải phương trình Diophantine tuyến tính cho $n$ ẩn số, ta cần thế từng bước, hai ẩn số một lần.
+	Trong trường hợp $n>3$ cái can, các chứng minh lý thuyết cùng việc giải phương trình cũng tương tự trường hợp $3$ cái can. Chú ý rằng khi giải phương trình Diophantine tuyến tính cho $n$ ẩn số, ta cần thế từng bước, hai ẩn số một lần.
 	\vskip 0.1cm
 	\textbf{\color{hoccungpi}Bài tập $\pmb{5.}$}
 	Hãy giải phương trình nghiệm nguyên sau:
