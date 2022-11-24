@@ -318,7 +318,7 @@
 	\vskip 0.05cm
 	-- \textit{Ngộ nhận} rằng, nếu $a, b > 0$ thì
 	\begin{align*}
-		\frac{1}{{{{\left( {1 \!+\! a} \right)}^2}}} \!+\! \frac{1}{{{{\left( {1 \!+\! b} \right)}^2}}} \!\ge\! \frac{1}{{1 \!+\! ab}} \!\Leftrightarrow\! a \!=\!b.
+		\frac{1}{{{{\left( {1 \!+\! a} \right)}^2}}} \!+\! \frac{1}{{{{\left( {1 \!+\! b} \right)}^2}}} \!=\! \frac{1}{{1 \!+\! ab}} \!\Leftrightarrow\! a \!=\!b.
 	\end{align*}
 	-- Mới chỉ chứng minh được rằng, nếu $x, y, z > 0$ thì
 	\begin{align*}
@@ -623,7 +623,7 @@
 	\vskip 0.05cm
 	Bằng phương pháp quy nạp theo $n \in \mathbb{N^*}$, dễ dàng chứng minh được rằng, $x_n \in (0;1)$  với mọi $n\in\mathbb{N^*}$.  Vì thế, từ hệ thức xác định dãy $(x_n)$,  suy ra $x_{n+1} < x_n$  với mọi $n \in \mathbb{N^*}$.  Như vậy, $(x_n)$  là một dãy số giảm, bị chặn dưới bởi $0$; do đó, nó có giới hạn hữu hạn không âm, khi  $n \to + \infty$.
 	\vskip 0.05cm
-	Đặt $L = \mathop {\lim }\limits_{x \to +\infty } {x_n}$.  Khi đó, chuyển hệ thức xác định dãy $(x_n)$  qua giới hạn, ta được:
+	Đặt $L = \mathop {\lim }\limits_{n \to +\infty } {x_n}$.  Khi đó, chuyển hệ thức xác định dãy $(x_n)$  qua giới hạn, ta được:
 	\begin{align*}
 		L = L\left( {1 - \frac{{{L^3} + {L^4}}}{2}} \right);
 	\end{align*}
@@ -631,7 +631,7 @@
 	\vskip 0.05cm
 	Vì thế, đặt  ${y_n} = \frac{{x_n^3 + x_n^4}}{2}$, ta có
 	\begin{align*}
-		\mathop {\lim }\limits_{x \to +\infty } {y_n} = 0 \text{ và }  \mathop {\lim }\limits_{x \to +\infty } \frac{{{y_n}}}{{x_n^3}} = \frac{1}{2}. \tag{$1$}
+		\mathop {\lim }\limits_{n \to +\infty } {y_n} = 0 \text{ và }  \mathop {\lim }\limits_{n \to +\infty } \frac{{{y_n}}}{{x_n^3}} = \frac{1}{2}. \tag{$1$}
 	\end{align*}
 	Từ hệ thức xác định dãy $(x_n)$  suy ra
 	\begin{align*}
@@ -640,9 +640,9 @@
 	\end{align*}
 	Vì thế, do ($1$) nên
 	\begin{align*}
-		\mathop {\lim }\limits_{x \to +\infty } \left( {\frac{1}{{x_{n + 1}^3}} - \frac{1}{{x_n^3}}} \right) = \frac{3}{2}.
+		\mathop {\lim }\limits_{n \to +\infty } \left( {\frac{1}{{x_{n + 1}^3}} - \frac{1}{{x_n^3}}} \right) = \frac{3}{2}.
 	\end{align*}
-	Do đó, theo định lý trung bình Cesaro, ta có $\mathop {\lim }\limits_{x \to +\infty } \frac{1}{{nx_n^3}} = \dfrac{3}{2}$; suy ra,   $\mathop {\lim }\limits_{x \to +\infty } nx_n^3 = \dfrac{2}{3}$. \hfill                                   ($2$)
+	Do đó, theo định lý trung bình Cesaro, ta có $\mathop {\lim }\limits_{n \to +\infty } \frac{1}{{nx_n^3}} = \dfrac{3}{2}$; suy ra,   $\mathop {\lim }\limits_{n \to +\infty } nx_n^3 = \dfrac{2}{3}$. \hfill                                   ($2$)
 	\vskip 0.05cm
 	Tiếp theo, từ hệ thức xác định dãy $(x_n)$  ta có:
 	\begin{align*}
@@ -653,7 +653,7 @@
 	\end{align*}  
 	Vì thế, từ ($1$) và ($2$), suy ra
 	\begin{align*}
-		\mathop {\lim }\limits_{x \to +\infty } \left( {\left( {\frac{1}{{{x_{n + 1}}}} - \frac{1}{{{x_n}}}} \right)\sqrt[3]{{{n^2}}}} \right) = \frac{1}{2} \cdot {\left( {\frac{2}{3}} \right)^{\frac{2}{3}}}.
+		\mathop {\lim }\limits_{n \to +\infty } \left( {\left( {\frac{1}{{{x_{n + 1}}}} - \frac{1}{{{x_n}}}} \right)\sqrt[3]{{{n^2}}}} \right) = \frac{1}{2} \cdot {\left( {\frac{2}{3}} \right)^{\frac{2}{3}}}.
 	\end{align*}
 	Mà  $\dfrac{1}{3} < \dfrac{1}{2} \cdot {\left( {\frac{2}{3}} \right)^{\frac{2}{3}}}$, nên theo định nghĩa giới hạn hữu hạn, tồn tại số nguyên dương  $n_0$, sao cho với mọi $n \ge n_0$  ta có
 	\begin{align*}
